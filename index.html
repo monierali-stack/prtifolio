@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monier Mohamed | Flutter Developer</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Monier Mohamed is a Flutter Developer focused on building modern, responsive, and high-performance mobile applications.">
+  <meta name="keywords" content="Monier Mohamed, Flutter Developer, Mobile Application Developer, Dart, Cyber Security, UI/UX Design, Portfolio">
+  <meta name="author" content="Monier Mohamed Monier">
+  
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:title" content="Monier Mohamed | Flutter Developer">
+  <meta property="og:description" content="Flutter Developer building high-performance mobile applications with clean architecture, beautiful UI, and scalable solutions.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/profile.jpg">
+  
+  <!-- Google Fonts: Poppins & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Ambient Interactive Canvas & Glow Overlay -->
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+  <div class="cursor-spotlight" id="cursor-spotlight" aria-hidden="true"></div>
+  <div class="ambient-glow glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow glow-2" aria-hidden="true"></div>
+  <div class="ambient-glow glow-3" aria-hidden="true"></div>
+
+  <!-- HEADER & NAVIGATION -->
+  <header class="site-header" id="site-header">
+    <div class="container header-container">
+      <a href="#home" class="brand-logo" aria-label="Monier Mohamed Homepage">
+        <span class="logo-text">MONIER<span class="logo-dot">.</span></span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="main-nav" id="main-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+          <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="#testimonials" class="nav-link">Testimonials</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Actions: Theme Toggle & Mobile Hamburger -->
+      <div class="header-actions">
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Switch Theme Mode" title="Toggle Theme">
+          <i class="fa-solid fa-moon theme-icon moon-icon"></i>
+          <i class="fa-solid fa-sun theme-icon sun-icon"></i>
+        </button>
+
+        <button id="hamburger-btn" class="hamburger-btn" aria-label="Open Navigation Menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span class="bar bar-1"></span>
+          <span class="bar bar-2"></span>
+          <span class="bar bar-3"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+      <ul class="mobile-nav-list">
+        <li><a href="#home" class="mobile-nav-link">Home</a></li>
+        <li><a href="#about" class="mobile-nav-link">About</a></li>
+        <li><a href="#education" class="mobile-nav-link">Education</a></li>
+        <li><a href="#experience" class="mobile-nav-link">Experience</a></li>
+        <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+        <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+        <li><a href="#services" class="mobile-nav-link">Services</a></li>
+        <li><a href="#testimonials" class="mobile-nav-link">Testimonials</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- ==================== 1. HOME / HERO SECTION ==================== -->
+    <section id="home" class="hero-section section-padding">
+      <div class="container hero-grid">
+        <!-- Hero Left Column -->
+        <div class="hero-content reveal fade-up">
+          <div class="hero-badge">
+            <span class="badge-pulse"></span>
+            <span class="badge-text">Available for Mobile Projects</span>
+          </div>
+          
+          <p class="hero-greeting">Hello, I'm</p>
+          <h1 class="hero-title">MONIER MOHAMED MONIER</h1>
+          <h2 class="hero-subtitle">
+            <span class="gradient-text">Flutter Developer</span>
+          </h2>
+          
+          <p class="hero-desc">
+            Flutter Developer with 1 month of experience building high-performance mobile applications with clean architecture, beautiful UI, and scalable solutions.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary" id="hero-btn-projects">
+              <span>View My Projects</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#contact" class="btn btn-outline" id="hero-btn-contact">
+              <span>Get In Touch</span>
+              <i class="fa-regular fa-envelope"></i>
+            </a>
+          </div>
+
+          <!-- Social / Contact Quick Links -->
+          <div class="hero-socials">
+            <span class="socials-label">Connect:</span>
+            <div class="social-links">
+              <!-- GitHub -->
+              <a href="https://github.com/monierali-stack" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub Profile" title="GitHub: monierali-stack">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <!-- LinkedIn -->
+              <a href="https://www.linkedin.com/in/monier-mohamed" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn Profile" title="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <!-- Email -->
+              <a href="mailto:MONIER.ALI@EJUST.EDU.EG" class="social-icon" aria-label="Send Email" title="Email: MONIER.ALI@EJUST.EDU.EG">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+              <!-- Phone -->
+              <a href="tel:+201210774013" class="social-icon" aria-label="Call Phone" title="Phone: +201210774013">
+                <i class="fa-solid fa-phone"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Right Column: Profile Showcase -->
+        <div class="hero-visual reveal fade-in">
+          <div class="profile-card-wrapper">
+            <!-- Decorative Orbit Elements -->
+            <div class="orbit-circle orbit-1"></div>
+            <div class="orbit-circle orbit-2"></div>
+            <div class="tech-pill tech-pill-flutter">
+              <i class="fa-solid fa-mobile-screen"></i>
+              <span>Flutter & Dart</span>
+            </div>
+            <div class="tech-pill tech-pill-security">
+              <i class="fa-solid fa-shield-halved"></i>
+              <span>Cyber Security</span>
+            </div>
+
+            <!-- Profile Image Container -->
+            <div class="profile-image-container">
+              <div class="profile-glow"></div>
+              <img src="images/profile.jpg" alt="Monier Mohamed Monier - Flutter Developer" class="profile-img" width="460" height="460">
+              <div class="profile-border-ring"></div>
+            </div>
+
+            <!-- Floating Badge -->
+            <div class="profile-floating-badge">
+              <div class="badge-icon-box">
+                <i class="fa-solid fa-laptop-code"></i>
+              </div>
+              <div class="badge-details">
+                <span class="badge-title">Flutter Developer</span>
+                <span class="badge-sub">Clean Architecture & UI</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 2. ABOUT SECTION ==================== -->
+    <section id="about" class="about-section section-padding">
+      <div class="container">
+        <div class="section-header reveal fade-up">
+          <span class="section-tag"><i class="fa-regular fa-user"></i> Introduction</span>
+          <h2 class="section-title">About Me</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left Column: Image Card -->
+          <div class="about-image-col reveal slide-right">
+            <div class="about-card-frame">
+              <div class="about-card-glow"></div>
+              <div class="about-image-wrapper">
+                <img src="images/about.jpg" alt="Monier Mohamed Monier" class="about-img" loading="lazy">
+              </div>
+              <div class="about-card-overlay">
+                <span class="overlay-tag"><i class="fa-solid fa-code"></i> Mobile Engineer</span>
+                <h3 class="overlay-name">Monier Mohamed</h3>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Content & Info Cards -->
+          <div class="about-content-col reveal slide-left">
+            <h3 class="about-heading">
+              Dedicated to Building Seamless <span class="gradient-text">Mobile Experiences</span>
+            </h3>
+            
+            <p class="about-bio">
+              I am Monier Mohamed Monier, a Flutter Developer with 1 month of experience in mobile application development. I have the ability to develop different types of applications and deliver projects within a short time. I focus on clean architecture, beautiful UI, performance, scalability, and user experience.
+            </p>
+
+            <!-- 5 Information Cards -->
+            <div class="info-cards-grid">
+              <div class="info-card">
+                <div class="info-card-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                <div class="info-card-text">
+                  <h4>Flutter Developer</h4>
+                  <p>Mobile App Specialist</p>
+                </div>
+              </div>
+
+              <div class="info-card">
+                <div class="info-card-icon"><i class="fa-regular fa-clock"></i></div>
+                <div class="info-card-text">
+                  <h4>1 Month Experience</h4>
+                  <p>Fast Learner & Dedicated</p>
+                </div>
+              </div>
+
+              <div class="info-card">
+                <div class="info-card-icon"><i class="fa-solid fa-layer-group"></i></div>
+                <div class="info-card-text">
+                  <h4>2 Flutter Projects</h4>
+                  <p>High Performance Apps</p>
+                </div>
+              </div>
+
+              <div class="info-card">
+                <div class="info-card-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                <div class="info-card-text">
+                  <h4>Cyber Security</h4>
+                  <p>EJUST University Major</p>
+                </div>
+              </div>
+
+              <div class="info-card info-card-highlight">
+                <div class="info-card-icon"><i class="fa-solid fa-rocket"></i></div>
+                <div class="info-card-text">
+                  <h4>Future Projects</h4>
+                  <p>Expanding Portfolio</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Download CV Button -->
+            <div class="about-actions">
+              <a href="assets/Monier-CV.pdf" download="Monier-CV.pdf" target="_blank" class="btn btn-primary" id="btn-download-cv">
+                <i class="fa-solid fa-download"></i>
+                <span>Download CV</span>
+              </a>
+              <a href="#contact" class="btn btn-outline">
+                <i class="fa-solid fa-handshake"></i>
+                <span>Hire Me</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 3. EDUCATION SECTION ==================== -->
+    <section id="education" class="education-section section-padding">
+      <div class="container">
+        <div class="section-header reveal fade-up">
+          <span class="section-tag"><i class="fa-solid fa-graduation-cap"></i> Academic Background</span>
+          <h2 class="section-title">Education</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="timeline-container education-timeline reveal fade-up">
+          <div class="timeline-line"></div>
+
+          <!-- Education Item -->
+          <div class="timeline-item">
+            <div class="timeline-dot">
+              <i class="fa-solid fa-building-columns"></i>
+            </div>
+            <div class="timeline-card glass-card">
+              <div class="timeline-badge-row">
+                <span class="time-badge"><i class="fa-solid fa-graduation-cap"></i> Undergraduate</span>
+                <span class="security-badge"><i class="fa-solid fa-shield-halved"></i> Security Focus</span>
+              </div>
+              <h3 class="timeline-card-title">EJUST University</h3>
+              <h4 class="timeline-card-sub">
+                Egypt-Japan University of Science and Technology &mdash; <span class="highlight">Major: Cyber Security</span>
+              </h4>
+              <p class="timeline-card-desc">
+                I studied Cyber Security at EJUST University, developing knowledge in cybersecurity, networking, programming, and modern technologies.
+              </p>
+              <div class="education-pillars">
+                <div class="pillar-tag"><i class="fa-solid fa-lock"></i> Cyber Security</div>
+                <div class="pillar-tag"><i class="fa-solid fa-network-wired"></i> Computer Networks</div>
+                <div class="pillar-tag"><i class="fa-solid fa-code"></i> Software Development</div>
+                <div class="pillar-tag"><i class="fa-solid fa-microchip"></i> Modern Technologies</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 4. EXPERIENCE SECTION ==================== -->
+    <section id="experience" class="experience-section section-padding">
+      <div class="container">
+        <div class="section-header reveal fade-up">
+          <span class="section-tag"><i class="fa-solid fa-briefcase"></i> Journey & Activities</span>
+          <h2 class="section-title">Experience</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="timeline-container experience-timeline reveal fade-up">
+          <div class="timeline-line"></div>
+
+          <!-- Experience 01: Flutter Developer -->
+          <div class="timeline-item timeline-item-left">
+            <div class="timeline-dot">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <div class="timeline-card glass-card">
+              <div class="timeline-badge-row">
+                <span class="time-badge"><i class="fa-regular fa-calendar-check"></i> 1 Month Experience</span>
+                <span class="role-badge">Mobile Engineering</span>
+              </div>
+              <h3 class="timeline-card-title">Flutter Developer</h3>
+              <h4 class="timeline-card-sub">Mobile Application Development</h4>
+              <p class="timeline-card-desc">
+                I have experience developing mobile applications using Flutter and Dart, focusing on modern UI, responsive layouts, clean architecture, performance, and scalable solutions.
+              </p>
+              <ul class="experience-highlights">
+                <li><i class="fa-solid fa-check-circle"></i> Clean architecture pattern & state handling</li>
+                <li><i class="fa-solid fa-check-circle"></i> Responsive mobile user interfaces</li>
+                <li><i class="fa-solid fa-check-circle"></i> Fast execution and short delivery timelines</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Experience 02: Swimmer Player -->
+          <div class="timeline-item timeline-item-right">
+            <div class="timeline-dot dot-sports">
+              <i class="fa-solid fa-person-swimming"></i>
+            </div>
+            <div class="timeline-card glass-card">
+              <div class="timeline-badge-row">
+                <span class="time-badge badge-sport"><i class="fa-solid fa-medal"></i> Athletic Activity</span>
+                <span class="org-badge">Tanta Club</span>
+              </div>
+              <h3 class="timeline-card-title">Swimmer Player</h3>
+              <h4 class="timeline-card-sub">Tanta Club &mdash; Sports & Athletics</h4>
+              <p class="timeline-card-desc">
+                I am a swimmer player at Tanta Club. This discipline builds immense physical endurance, strong mental focus, team spirit, and strict commitment to continuous improvement.
+              </p>
+              <div class="athlete-badges">
+                <span class="mini-tag"><i class="fa-solid fa-water"></i> Swimming</span>
+                <span class="mini-tag"><i class="fa-solid fa-bullseye"></i> Discipline</span>
+                <span class="mini-tag"><i class="fa-solid fa-heart-pulse"></i> Endurance</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 5. SKILLS SECTION ==================== -->
+    <section id="skills" class="skills-section section-padding">
+      <div class="container">
+        <div class="section-header reveal fade-up">
+          <span class="section-tag"><i class="fa-solid fa-bolt"></i> Capabilities</span>
+          <h2 class="section-title">My Skills</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <!-- Main Skills Category -->
+        <div class="skills-category-block reveal fade-up">
+          <h3 class="category-title">
+            <i class="fa-solid fa-code"></i> Main Tech Stack
+          </h3>
+          <div class="skills-grid main-skills-grid">
+            <!-- Skill: Flutter -->
+            <div class="skill-card glass-card">
+              <div class="skill-icon-wrap icon-flutter">
+                <i class="fa-solid fa-mobile-screen"></i>
+              </div>
+              <div class="skill-info">
+                <h4 class="skill-name">Flutter</h4>
+                <p class="skill-desc">Cross-platform mobile development with modern widget trees and smooth animations.</p>
+                <div class="skill-badge-level">Core Expertise</div>
+              </div>
+            </div>
+
+            <!-- Skill: Dart -->
+            <div class="skill-card glass-card">
+              <div class="skill-icon-wrap icon-dart">
+                <i class="fa-solid fa-bullseye"></i>
+              </div>
+              <div class="skill-info">
+                <h4 class="skill-name">Dart</h4>
+                <p class="skill-desc">Object-oriented programming, asynchronous streams, clean patterns, and null safety.</p>
+                <div class="skill-badge-level">Primary Language</div>
+              </div>
+            </div>
+
+            <!-- Skill: HTML -->
+            <div class="skill-card glass-card">
+              <div class="skill-icon-wrap icon-html">
+                <i class="fa-brands fa-html5"></i>
+              </div>
+              <div class="skill-info">
+                <h4 class="skill-name">HTML5</h4>
+                <p class="skill-desc">Semantic markup, accessible structure, modern DOM hierarchy, and SEO best practices.</p>
+                <div class="skill-badge-level">Foundation</div>
+              </div>
+            </div>
+
+            <!-- Skill: CSS -->
+            <div class="skill-card glass-card">
+              <div class="skill-icon-wrap icon-css">
+                <i class="fa-brands fa-css3-alt"></i>
+              </div>
+              <div class="skill-info">
+                <h4 class="skill-name">CSS3</h4>
+                <p class="skill-desc">Advanced responsive layouts, glassmorphism, animations, Grid, and Flexbox.</p>
+                <div class="skill-badge-level">Styling & UI</div>
+              </div>
+            </div>
+
+            <!-- Skill: JavaScript -->
+            <div class="skill-card glass-card">
+              <div class="skill-icon-wrap icon-js">
+                <i class="fa-brands fa-js"></i>
+              </div>
+              <div class="skill-info">
+                <h4 class="skill-name">JavaScript</h4>
+                <p class="skill-desc">Modern ES6+ logic, DOM manipulation, asynchronous fetching, and interactive behaviors.</p>
+                <div class="skill-badge-level">Frontend Logic</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Additional Skills Category -->
+        <div class="skills-category-block reveal fade-up">
+          <h3 class="category-title">
+            <i class="fa-solid fa-wand-magic-sparkles"></i> Additional Skills
+          </h3>
+          <div class="skills-grid additional-skills-grid">
+            <!-- UI/UX Design -->
+            <div class="skill-card glass-card">
+              <div class="skill-icon-wrap icon-uiux">
+                <i class="fa-solid fa-compass-drafting"></i>
+              </div>
+              <div class="skill-info">
+                <h4 class="skill-name">UI/UX Design</h4>
+                <p class="skill-desc">User-centered interfaces, intuitive flows, wireframing, and visual balance.</p>
+                <div class="skill-badge-level">Design Focus</div>
+              </div>
+            </div>
+
+            <!-- Graphic Design -->
+            <div class="skill-card glass-card">
+              <div class="skill-icon-wrap icon-graphic">
+                <i class="fa-solid fa-palette"></i>
+              </div>
+              <div class="skill-info">
+                <h4 class="skill-name">Graphic Design</h4>
+                <p class="skill-desc">Creative digital branding, vectors, iconography, and visual content creation.</p>
+                <div class="skill-badge-level">Visual Arts</div>
+              </div>
+            </div>
+
+            <!-- Photoshop -->
+            <div class="skill-card glass-card">
+              <div class="skill-icon-wrap icon-photoshop">
+                <i class="fa-solid fa-image"></i>
+              </div>
+              <div class="skill-info">
+                <h4 class="skill-name">Photoshop</h4>
+                <p class="skill-desc">Image manipulation, color correction, composition, and high-res asset crafting.</p>
+                <div class="skill-badge-level">Creative Tool</div>
+              </div>
+            </div>
+
+            <!-- AI Models -->
+            <div class="skill-card glass-card">
+              <div class="skill-icon-wrap icon-ai">
+                <i class="fa-solid fa-brain"></i>
+              </div>
+              <div class="skill-info">
+                <h4 class="skill-name">AI Models</h4>
+                <p class="skill-desc">Leveraging modern AI tooling, model workflows, and prompt engineering for apps.</p>
+                <div class="skill-badge-level">Next-Gen Tech</div>
+              </div>
+            </div>
+
+            <!-- Responsive Design -->
+            <div class="skill-card glass-card">
+              <div class="skill-icon-wrap icon-responsive">
+                <i class="fa-solid fa-display"></i>
+              </div>
+              <div class="skill-info">
+                <h4 class="skill-name">Responsive Design</h4>
+                <p class="skill-desc">Pixel-perfect layouts across mobiles, tablets, and high-resolution desktop screens.</p>
+                <div class="skill-badge-level">Multi-Device</div>
+              </div>
+            </div>
+
+            <!-- API Integration -->
+            <div class="skill-card glass-card">
+              <div class="skill-icon-wrap icon-api">
+                <i class="fa-solid fa-network-wired"></i>
+              </div>
+              <div class="skill-info">
+                <h4 class="skill-name">API Integration</h4>
+                <p class="skill-desc">REST API communication, JSON serialization, and dynamic asynchronous data feeds.</p>
+                <div class="skill-badge-level">Full Connectivity</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 6. PROJECTS SECTION ==================== -->
+    <section id="projects" class="projects-section section-padding">
+      <div class="container">
+        <div class="section-header reveal fade-up">
+          <span class="section-tag"><i class="fa-solid fa-folder-open"></i> Portfolio Work</span>
+          <h2 class="section-title">My Projects</h2>
+          <p class="section-subtitle">Flutter Projects</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="projects-grid">
+          <!-- PROJECT 01 -->
+          <article class="project-card glass-card tilt-card reveal fade-up" data-tilt>
+            <div class="project-img-box">
+              <img src="images/project1.jpg" alt="Flutter Mobile Application" class="project-img" loading="lazy">
+              <div class="project-img-overlay">
+                <span class="project-tag">Featured Mobile App</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-tech-tags">
+                <span class="tech-tag"><i class="fa-solid fa-mobile-screen"></i> Flutter</span>
+                <span class="tech-tag"><i class="fa-solid fa-code"></i> Dart</span>
+              </div>
+              <h3 class="project-title">Flutter Mobile Application</h3>
+              <p class="project-desc">
+                A modern Flutter mobile application with a clean interface, responsive layout, smooth user experience, and scalable structure.
+              </p>
+              <div class="project-actions">
+                <!-- Replace [PROJECT_1_LINK] with real link when ready -->
+                <a href="[PROJECT_1_LINK]" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  <span>View Project</span>
+                </a>
+                <!-- GitHub Project Link -->
+                <a href="https://github.com/monierali-stack" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                  <i class="fa-brands fa-github"></i>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 02 -->
+          <article class="project-card glass-card tilt-card reveal fade-up" data-tilt>
+            <div class="project-img-box">
+              <img src="images/project2.jpg" alt="Flutter Application" class="project-img" loading="lazy">
+              <div class="project-img-overlay">
+                <span class="project-tag">Interactive UI/UX</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-tech-tags">
+                <span class="tech-tag"><i class="fa-solid fa-mobile-screen"></i> Flutter</span>
+                <span class="tech-tag"><i class="fa-solid fa-code"></i> Dart</span>
+              </div>
+              <h3 class="project-title">Flutter Application</h3>
+              <p class="project-desc">
+                A Flutter application focused on modern UI, performance, usability, and responsive design.
+              </p>
+              <div class="project-actions">
+                <!-- Replace [PROJECT_2_LINK] with real link when ready -->
+                <a href="[PROJECT_2_LINK]" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  <span>View Project</span>
+                </a>
+                <!-- Replace [GITHUB_2_LINK] with real link when ready -->
+                <a href="[GITHUB_2_LINK]" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                  <i class="fa-brands fa-github"></i>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Teaser for Upcoming Projects -->
+        <div class="upcoming-projects-banner glass-card reveal fade-up">
+          <div class="banner-icon">
+            <i class="fa-solid fa-hourglass-half"></i>
+          </div>
+          <div class="banner-text">
+            <h3>More projects coming soon.</h3>
+            <p>Continuously designing, coding, and deploying next-generation Flutter mobile applications.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 7. SERVICES SECTION ==================== -->
+    <section id="services" class="services-section section-padding">
+      <div class="container">
+        <div class="section-header reveal fade-up">
+          <span class="section-tag"><i class="fa-solid fa-gear"></i> What I Offer</span>
+          <h2 class="section-title">My Services</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="services-grid">
+          <!-- Service 1: UI/UX Design -->
+          <div class="service-card glass-card reveal fade-up">
+            <div class="service-icon-box">
+              <i class="fa-solid fa-pen-ruler"></i>
+            </div>
+            <h3 class="service-title">UI/UX Design</h3>
+            <p class="service-desc">
+              Creating clean, modern, and user-friendly interfaces focused on usability and visual experience.
+            </p>
+            <div class="service-accent-line"></div>
+          </div>
+
+          <!-- Service 2: Graphic Design -->
+          <div class="service-card glass-card reveal fade-up">
+            <div class="service-icon-box">
+              <i class="fa-solid fa-bezier-curve"></i>
+            </div>
+            <h3 class="service-title">Graphic Design</h3>
+            <p class="service-desc">
+              Creating professional graphics and visual content for digital projects.
+            </p>
+            <div class="service-accent-line"></div>
+          </div>
+
+          <!-- Service 3: Photoshop -->
+          <div class="service-card glass-card reveal fade-up">
+            <div class="service-icon-box">
+              <i class="fa-solid fa-paintbrush"></i>
+            </div>
+            <h3 class="service-title">Photoshop</h3>
+            <p class="service-desc">
+              Professional image editing, manipulation, compositions, and visual design using Photoshop.
+            </p>
+            <div class="service-accent-line"></div>
+          </div>
+
+          <!-- Service 4: AI Models -->
+          <div class="service-card glass-card reveal fade-up">
+            <div class="service-icon-box">
+              <i class="fa-solid fa-robot"></i>
+            </div>
+            <h3 class="service-title">AI Models</h3>
+            <p class="service-desc">
+              Working with modern AI models and artificial intelligence technologies to build smart digital solutions.
+            </p>
+            <div class="service-accent-line"></div>
+          </div>
+
+          <!-- Service 5: Flutter Development -->
+          <div class="service-card glass-card service-card-highlight reveal fade-up">
+            <div class="service-icon-box">
+              <i class="fa-solid fa-mobile-screen"></i>
+            </div>
+            <h3 class="service-title">Flutter Development</h3>
+            <p class="service-desc">
+              Building modern and responsive mobile applications using Flutter and Dart.
+            </p>
+            <div class="service-accent-line"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 8. TESTIMONIALS SECTION ==================== -->
+    <section id="testimonials" class="testimonials-section section-padding">
+      <div class="container">
+        <div class="section-header reveal fade-up">
+          <span class="section-tag"><i class="fa-solid fa-comments"></i> Endorsements</span>
+          <h2 class="section-title">Testimonials</h2>
+          <p class="section-subtitle">What Clients Say</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="testimonials-intro reveal fade-up">
+          <p>
+            I have received positive feedback from clients who described me as a good developer and said that my work is professional.
+          </p>
+        </div>
+
+        <!-- Vanilla JS Testimonial Carousel -->
+        <div class="carousel-wrapper reveal fade-up" id="testimonials-carousel-container">
+          <div class="carousel-track-container">
+            <div class="carousel-track" id="carousel-track">
+              
+              <!-- Testimonial 01 (Editable Placeholder) -->
+              <div class="carousel-slide active" data-index="0">
+                <div class="testimonial-card glass-card">
+                  <div class="quote-mark"><i class="fa-solid fa-quote-left"></i></div>
+                  <p class="testimonial-quote">"Great developer and professional work."</p>
+                  <div class="client-meta">
+                    <div class="client-avatar">
+                      <i class="fa-solid fa-user-tie"></i>
+                    </div>
+                    <div class="client-details">
+                      <!-- Editable Placeholder -->
+                      <h4 class="client-name">Client Name</h4>
+                      <p class="client-role">Client</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Testimonial 02 (Editable Placeholder) -->
+              <div class="carousel-slide" data-index="1">
+                <div class="testimonial-card glass-card">
+                  <div class="quote-mark"><i class="fa-solid fa-quote-left"></i></div>
+                  <p class="testimonial-quote">"Great developer and professional work."</p>
+                  <div class="client-meta">
+                    <div class="client-avatar">
+                      <i class="fa-solid fa-user-check"></i>
+                    </div>
+                    <div class="client-details">
+                      <!-- Editable Placeholder -->
+                      <h4 class="client-name">Client Name</h4>
+                      <p class="client-role">Client</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Testimonial 03 (Editable Placeholder) -->
+              <div class="carousel-slide" data-index="2">
+                <div class="testimonial-card glass-card">
+                  <div class="quote-mark"><i class="fa-solid fa-quote-left"></i></div>
+                  <p class="testimonial-quote">"Great developer and professional work."</p>
+                  <div class="client-meta">
+                    <div class="client-avatar">
+                      <i class="fa-solid fa-user-shield"></i>
+                    </div>
+                    <div class="client-details">
+                      <!-- Editable Placeholder -->
+                      <h4 class="client-name">Client Name</h4>
+                      <p class="client-role">Client</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Carousel Controls -->
+          <div class="carousel-controls">
+            <button class="carousel-btn prev-btn" id="carousel-prev" aria-label="Previous Testimonial">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <div class="carousel-dots" id="carousel-dots">
+              <button class="dot active" data-slide="0" aria-label="Slide 1"></button>
+              <button class="dot" data-slide="1" aria-label="Slide 2"></button>
+              <button class="dot" data-slide="2" aria-label="Slide 3"></button>
+            </div>
+            <button class="carousel-btn next-btn" id="carousel-next" aria-label="Next Testimonial">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 9. GET IN TOUCH / CONTACT SECTION ==================== -->
+    <section id="contact" class="contact-section section-padding">
+      <div class="container">
+        <div class="section-header reveal fade-up">
+          <span class="section-tag"><i class="fa-solid fa-paper-plane"></i> Collaboration</span>
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">Let's Build Something Amazing Together</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left Column: Contact Cards -->
+          <div class="contact-cards-col reveal slide-right">
+            <h3 class="contact-col-title">Connect Directly</h3>
+            <p class="contact-col-desc">
+              Feel free to reach out for mobile app projects, UI/UX design, or collaborations. I am always open to discussing new opportunities.
+            </p>
+
+            <div class="contact-cards-list">
+              <!-- Email Card -->
+              <a href="mailto:MONIER.ALI@EJUST.EDU.EG" class="contact-card glass-card" id="contact-email-link">
+                <div class="contact-card-icon">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="contact-card-content">
+                  <span class="contact-card-label">Email</span>
+                  <strong class="contact-card-value">MONIER.ALI@EJUST.EDU.EG</strong>
+                </div>
+                <div class="contact-card-arrow">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </div>
+              </a>
+
+              <!-- Phone Card -->
+              <a href="tel:+201210774013" class="contact-card glass-card" id="contact-phone-link">
+                <div class="contact-card-icon">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="contact-card-content">
+                  <span class="contact-card-label">Phone</span>
+                  <strong class="contact-card-value">+201210774013</strong>
+                </div>
+                <div class="contact-card-arrow">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </div>
+              </a>
+
+              <!-- LinkedIn Card -->
+              <a href="https://www.linkedin.com/in/monier-mohamed" target="_blank" rel="noopener noreferrer" class="contact-card glass-card" id="contact-linkedin-link">
+                <div class="contact-card-icon">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+                <div class="contact-card-content">
+                  <span class="contact-card-label">LinkedIn</span>
+                  <strong class="contact-card-value">linkedin.com/in/monier-mohamed</strong>
+                </div>
+                <div class="contact-card-arrow">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </div>
+              </a>
+
+              <!-- GitHub Card (Editable Placeholder) -->
+              <a href="https://github.com/[YOUR_GITHUB]" target="_blank" rel="noopener noreferrer" class="contact-card glass-card" id="contact-github-link">
+                <div class="contact-card-icon">
+                  <i class="fa-brands fa-github"></i>
+                </div>
+                <div class="contact-card-content">
+                  <span class="contact-card-label">GitHub</span>
+                  <strong class="contact-card-value">github.com/monierali-stack</strong>
+                </div>
+                <div class="contact-card-arrow">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: Contact Form -->
+          <div class="contact-form-col reveal slide-left">
+            <div class="form-wrapper glass-card">
+              <h3 class="form-title">Send a Message</h3>
+              
+              <!-- Form Notification Banner -->
+              <div id="form-alert" class="form-alert" role="alert" style="display: none;"></div>
+
+              <form id="contact-form" novalidate>
+                <div class="form-group">
+                  <label for="contact-name">Full Name <span class="required-star">*</span></label>
+                  <div class="input-wrap">
+                    <i class="fa-regular fa-user input-icon"></i>
+                    <input type="text" id="contact-name" name="name" placeholder="Your full name" required>
+                  </div>
+                  <span class="field-error" id="name-error"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-email">Email Address <span class="required-star">*</span></label>
+                  <div class="input-wrap">
+                    <i class="fa-regular fa-envelope input-icon"></i>
+                    <input type="email" id="contact-email" name="email" placeholder="example@domain.com" required>
+                  </div>
+                  <span class="field-error" id="email-error"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-subject">Subject <span class="required-star">*</span></label>
+                  <div class="input-wrap">
+                    <i class="fa-solid fa-tag input-icon"></i>
+                    <input type="text" id="contact-subject" name="subject" placeholder="Project inquiry or discussion" required>
+                  </div>
+                  <span class="field-error" id="subject-error"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-message">Message <span class="required-star">*</span></label>
+                  <div class="input-wrap text-area-wrap">
+                    <i class="fa-regular fa-message input-icon"></i>
+                    <textarea id="contact-message" name="message" rows="5" placeholder="Tell me about your mobile project, goals, or requirements..." required></textarea>
+                  </div>
+                  <span class="field-error" id="message-error"></span>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block" id="btn-submit-form">
+                  <span>Send Message</span>
+                  <i class="fa-solid fa-paper-plane"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-top">
+        <a href="#home" class="brand-logo footer-logo">
+          <span class="logo-text">MONIER<span class="logo-dot">.</span></span>
+        </a>
+        <p class="footer-tagline">
+          Flutter Developer &bull; Cyber Security &bull; UI/UX &bull; Mobile Engineering
+        </p>
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <div class="footer-bottom">
+        <p class="copyright-text">
+          &copy; <span id="current-year">2026</span> <strong>Monier Mohamed Monier</strong>. All rights reserved.
+        </p>
+        <div class="footer-socials">
+          <a href="https://www.linkedin.com/in/monier-mohamed" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://github.com/monierali-stack" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="mailto:MONIER.ALI@EJUST.EDU.EG" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+          <a href="tel:+201210774013" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+        </div>
+        <a href="#home" class="back-to-top" id="back-to-top" aria-label="Back to Top" title="Back to top">
+          <i class="fa-solid fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Custom JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>
